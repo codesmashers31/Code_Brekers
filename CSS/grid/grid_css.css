@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.fa-bars{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.fonts{
+    margin-top: 10px;
+}
+.fa-user{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fa-store{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fa-message{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fa-heart{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fa-address-card{
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+input[type]{
+    border-radius: 20px;
+    padding: 8px;
+    width: 250px;
+    margin-top: 25px;
+}
+.fonts > img{
+    margin-bottom: 10px;
+}
+
+.fa-magnifying-glass{
+    position: relative;
+    right: 30px;
+}
+
+
+.img{
+
+padding-top: 15px;
+
+    
+
+
+}
+
+
+.card-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+
+
+}
+
+.card img {
+
+width: 135px;
+
+
+
+}

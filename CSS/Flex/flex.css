@@ -1,0 +1,21 @@
+.card-container{
+    
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+    background-color: aquamarine;
+
+}
+
+
+.card{
+
+background-color: blueviolet;
+padding: 20px;
+border: 3px dotted black;
+border-radius: 20px;
+width: 1000px;
+margin: 10px;
+
+
+}
