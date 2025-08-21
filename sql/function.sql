@@ -36,6 +36,9 @@ INSERT INTO Customers VALUES (10,concat('Name',  ' ', 'Value'),'suriflix@gmail.c
 
 INSERT INTO Customers VALUES (13,concat('Name',  ' ', 'Value'), "");
 
+select * from Customers;
+
+
 
 
 
