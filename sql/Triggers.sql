@@ -37,7 +37,7 @@ DELIMITER $$
 CREATE TRIGGER updatelog after UPDATE on customers 
 for each row 
 begin
-insert into update_log(Cus_ID,name,action,log_time,old_name) values (new.CustomerID,new.Name,'Update',Now(),old.Name);
+insert into update_log(Cus_ID,name,action,log_time,old_name) values (CustomerID,new.Name,'Update',Now(),old.Name);
 end$$
 
 DELIMITER ;
