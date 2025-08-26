@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js Intro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Introduction</title>
+  
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    
-<h1>What is Js</h1>
-<p>
-          1. Plans - A, B, C
-          2. Minimum 3 to 5 line code principle formula.
-          3. Task submission.
-          4. GIT process & LinkedIn.
-          5. Self Learn.
-          6. Continue learn at one goal.
-          7. Understand: what you want? what you do?
-      
+<body class="bg-light text-dark">
 
+  <div class="container py-5">
 
+    <!-- HEADER -->
+    <div class="text-center mb-4">
+      <h1 class="fw-bold text-primary">Introduction to JavaScript (JS)</h1>
+      <p class="lead">Basics for Beginners & Interview Preparation</p>
+    </div>
 
+    <!-- PLANS -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-secondary text-white fw-bold">Learning Plans</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">1. Plans - A, B, C</li>
+        <li class="list-group-item">2. Minimum 3 to 5 line code principle formula</li>
+        <li class="list-group-item">3. Task submission</li>
+        <li class="list-group-item">4. GIT process & LinkedIn usage</li>
+        <li class="list-group-item">5. Self Learning</li>
+        <li class="list-group-item">6. Continue learning with one goal</li>
+        <li class="list-group-item">7. Understand: What you want? What you do?</li>
+      </ul>
+    </div>
 
+    <!-- WHAT IS JS -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white fw-bold">What is JavaScript?</div>
+      <div class="card-body">
+        <p>✔ JavaScript (JS) is a high-level programming language:</p>
+        <ul>
+          <li>Runs inside web browsers, enabling interactivity.</li>
+          <li>Allows features like form validation, animations, and content updates without reloading.</li>
+          <li>Can also run outside browsers with environments like <b>Node.js</b>.</li>
+          <li>Runs inside browser engines like Chrome’s <b>V8 Engine</b>.</li>
+          <li>Can be added:
+            <ul>
+              <li><code>&lt;script&gt;</code> inline</li>
+              <li>External file via <code>&lt;script src="file.js"&gt;&lt;/script&gt;</code></li>
+            </ul>
+          </li>
+        </ul>
+        <p><b>Best Practice:</b> Place scripts before <code>&lt;/body&gt;</code> for performance.</p>
+      </div>
+    </div>
 
+    <!-- TYPES OF JS -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-success text-white fw-bold">Types of Work with JS</div>
+      <div class="card-body">
+        <ul>
+          <li>Mathematical Calculations</li>
+          <li>Pattern Calculations</li>
+          <li>Data Handling (approx. 15% focus in Interviews)</li>
+        </ul>
+      </div>
+    </div>
 
-Js?
-1. Java Script is the programming language.
-2. that runs in web browsers.
-3. allowing developers to add dynamic features like form validation,animations and content update without reloading the page.
-4. it can also be run outside browsers using enviroments like node.js
-5. it is located in browsers - java script engine - V8 engine.
-6. js can be included directly inside your <html> file.
-7. inline script - inside you script tag. attribute scr
-<script src="jsfile.js"></script> - external js file
-<!-- <script>
-    // statements of js
-</script> -->
-best practice. placeing your end of the <body>
+    <!-- VARIABLES & DATATYPES -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-warning text-dark fw-bold">Key JS Concepts</div>
+      <div class="card-body">
+        <p>⚡ Variables: <code>var</code>, <code>let</code>, <code>const</code></p>
+        <p>⚡ Data types: Primitive (String, Number, Boolean, null, undefined, Symbol, BigInt) & Non-Primitive (Objects, Arrays, Functions)</p>
+        <p>⚡ Operators: +, -, *, /, %, <, >, &&, || ...</p>
+      </div>
+    </div>
 
-
-Why place js at end:
-js at the end allosw the browser to load and dispaly HTML before executing scriptes, improving perfomance and avoing rendering issues. 
-
-only inside js file. you can use Js codes.
-
-8. two type of js - first point  is math calculations - Pattern calculations   - 
-data handling  - 15% - interview process
-
-Variables  - var,let,const key words.
-datatypes  - Primitive data types - NON Primitive.
-Operatoers - </p>
-
-
-
-
-<script src="JS/intro.js"></script>
-<script>
-
-// declaration
+    <!-- CODE EXAMPLES -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold">Example Code</div>
+      <div class="card-body bg-light">
+        <pre class="bg-dark text-light p-3 rounded"><code>
+// Declaration
 var a;
 let b;
 const c;
 
+// Naming Conventions
+// camelCase -  let goalIsOne;
+// PascalCase - let GoalIsOne;
+// snake_case - const goal_is_one;
+// kebab-case - (only for CSS classes)
+        </code></pre>
+      </div>
+    </div>
 
-//console.log();
+  </div>
 
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- External JS -->
+  <script src="JS/intro.js"></script>
 
-
-// camal case
-// var goalIsOne;
-
-// upper camal case - pascal case
-// let GoalIsOne;
-
-//snackcase
-// const goal_is_one;
-
-//cabab
-// var goal-is-one; its only for css classname
-
-
-</script>
 </body>
 </html>
