@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Essential Classes — Quick Reference</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .section-card { 
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border-left: 5px solid #0ea5e9;
+      box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);
+    }
+    .section-title { color: #0c4a6e; }
+    .class-tag { 
+      background: #0ea5e9; 
+      color: white; 
+      border-radius: 6px; 
+      padding: 2px 8px; 
+      font-size: 0.85em; 
+      margin: 2px; 
+      display: inline-block;
+      font-family: 'Courier New', monospace;
+    }
+    .utility-group { background: #fef3c7; border-left: 3px solid #f59e0b; }
+    .component-group { background: #dcfce7; border-left: 3px solid #22c55e; }
+    .layout-group { background: #fce7f3; border-left: 3px solid #ec4899; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <h1 class="text-4xl font-bold text-center text-blue-600 mb-2">Tailwind CSS Essential Classes</h1>
+        <p class="text-center text-gray-600 text-lg mb-8">தமிழ் + English | Complete utility-first framework reference</p>
+
+        <!-- Layout & Grid -->
+        <div class="section-card layout-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🏗️ Layout & Grid</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Container & Grid:</h3>
+                <span class="class-tag">container</span>
+                <span class="class-tag">mx-auto</span>
+                <span class="class-tag">grid</span>
+                <span class="class-tag">grid-cols-1</span>
+                <span class="class-tag">grid-cols-2</span>
+                <span class="class-tag">grid-cols-3</span>
+                <span class="class-tag">grid-cols-4</span>
+                <span class="class-tag">grid-cols-12</span>
+                <span class="class-tag">col-span-1</span>
+                <span class="class-tag">col-span-2</span>
+                <span class="class-tag">gap-4</span>
+                <span class="class-tag">gap-6</span>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Flexbox:</h3>
+                <span class="class-tag">flex</span>
+                <span class="class-tag">inline-flex</span>
+                <span class="class-tag">flex-row</span>
+                <span class="class-tag">flex-col</span>
+                <span class="class-tag">flex-wrap</span>
+                <span class="class-tag">justify-start</span>
+                <span class="class-tag">justify-center</span>
+                <span class="class-tag">justify-end</span>
+                <span class="class-tag">justify-between</span>
+                <span class="class-tag">justify-around</span>
+                <span class="class-tag">items-start</span>
+                <span class="class-tag">items-center</span>
+                <span class="class-tag">items-end</span>
+            </div>
+            <p class="text-sm text-gray-600">💡 <strong>Tamil Note:</strong> Grid & flex layout-க்கு மிகவும் powerful utilities!</p>
+        </div>
+
+        <!-- Responsive Breakpoints -->
+        <div class="section-card p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">📱 Responsive Breakpoints</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Responsive Prefixes:</h3>
+                <span class="class-tag">sm:</span>
+                <span class="class-tag">md:</span>
+                <span class="class-tag">lg:</span>
+                <span class="class-tag">xl:</span>
+                <span class="class-tag">2xl:</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <p class="text-sm"><strong>Example:</strong> <code class="bg-gray-200 px-2 py-1 rounded">grid-cols-1 md:grid-cols-2 lg:grid-cols-4</code></p>
+                <p class="text-xs text-gray-600 mt-1">Mobile: 1 column, Tablet: 2 columns, Desktop: 4 columns</p>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">💡 <strong>Tamil Note:</strong> Mobile-first approach! Small screen-லிருந்து start பண்ணி bigger screens-க்கு modify பண்ணுவோம்.</p>
+        </div>
+
+        <!-- Spacing -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">📏 Spacing (Margin & Padding)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Margin:</h3>
+                    <span class="class-tag">m-0</span>
+                    <span class="class-tag">m-1</span>
+                    <span class="class-tag">m-2</span>
+                    <span class="class-tag">m-4</span>
+                    <span class="class-tag">m-8</span>
+                    <span class="class-tag">mx-auto</span>
+                    <span class="class-tag">mt-4</span>
+                    <span class="class-tag">mb-6</span>
+                    <span class="class-tag">ml-2</span>
+                    <span class="class-tag">mr-3</span>
+                    <span class="class-tag">mx-4</span>
+                    <span class="class-tag">my-8</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Padding:</h3>
+                    <span class="class-tag">p-0</span>
+                    <span class="class-tag">p-1</span>
+                    <span class="class-tag">p-2</span>
+                    <span class="class-tag">p-4</span>
+                    <span class="class-tag">p-8</span>
+                    <span class="class-tag">pt-4</span>
+                    <span class="class-tag">pb-6</span>
+                    <span class="class-tag">pl-2</span>
+                    <span class="class-tag">pr-3</span>
+                    <span class="class-tag">px-4</span>
+                    <span class="class-tag">py-8</span>
+                </div>
+            </div>
+            <div class="bg-yellow-50 p-3 rounded-lg mt-4">
+                <p class="text-sm"><strong>Scale:</strong> 0, 1 (0.25rem), 2 (0.5rem), 3 (0.75rem), 4 (1rem), 6 (1.5rem), 8 (2rem), 12 (3rem), 16 (4rem)</p>
+            </div>
+        </div>
+
+        <!-- Sizing -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">📐 Sizing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Width:</h3>
+                    <span class="class-tag">w-auto</span>
+                    <span class="class-tag">w-full</span>
+                    <span class="class-tag">w-1/2</span>
+                    <span class="class-tag">w-1/3</span>
+                    <span class="class-tag">w-1/4</span>
+                    <span class="class-tag">w-screen</span>
+                    <span class="class-tag">w-fit</span>
+                    <span class="class-tag">w-32</span>
+                    <span class="class-tag">w-64</span>
+                    <span class="class-tag">w-96</span>
+                    <span class="class-tag">max-w-xs</span>
+                    <span class="class-tag">max-w-md</span>
+                    <span class="class-tag">max-w-lg</span>
+                    <span class="class-tag">max-w-xl</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Height:</h3>
+                    <span class="class-tag">h-auto</span>
+                    <span class="class-tag">h-full</span>
+                    <span class="class-tag">h-screen</span>
+                    <span class="class-tag">h-fit</span>
+                    <span class="class-tag">h-32</span>
+                    <span class="class-tag">h-64</span>
+                    <span class="class-tag">h-96</span>
+                    <span class="class-tag">min-h-screen</span>
+                    <span class="class-tag">max-h-96</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colors -->
+        <div class="section-card component-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🎨 Colors</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Text Colors:</h3>
+                <span class="class-tag">text-gray-900</span>
+                <span class="class-tag">text-red-500</span>
+                <span class="class-tag">text-blue-600</span>
+                <span class="class-tag">text-green-500</span>
+                <span class="class-tag">text-yellow-500</span>
+                <span class="class-tag">text-purple-600</span>
+                <span class="class-tag">text-pink-500</span>
+                <span class="class-tag">text-white</span>
+                <span class="class-tag">text-black</span>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Background Colors:</h3>
+                <span class="class-tag">bg-gray-100</span>
+                <span class="class-tag">bg-red-500</span>
+                <span class="class-tag">bg-blue-600</span>
+                <span class="class-tag">bg-green-500</span>
+                <span class="class-tag">bg-yellow-400</span>
+                <span class="class-tag">bg-purple-600</span>
+                <span class="class-tag">bg-white</span>
+                <span class="class-tag">bg-transparent</span>
+            </div>
+            <div class="bg-green-50 p-3 rounded-lg">
+                <p class="text-sm"><strong>Color Scale:</strong> 50 (lightest), 100, 200, 300, 400, 500 (default), 600, 700, 800, 900 (darkest)</p>
+            </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">✍️ Typography</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Font Size:</h3>
+                    <span class="class-tag">text-xs</span>
+                    <span class="class-tag">text-sm</span>
+                    <span class="class-tag">text-base</span>
+                    <span class="class-tag">text-lg</span>
+                    <span class="class-tag">text-xl</span>
+                    <span class="class-tag">text-2xl</span>
+                    <span class="class-tag">text-3xl</span>
+                    <span class="class-tag">text-4xl</span>
+                    <span class="class-tag">text-5xl</span>
+                    <span class="class-tag">text-6xl</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Font Weight & Style:</h3>
+                    <span class="class-tag">font-thin</span>
+                    <span class="class-tag">font-light</span>
+                    <span class="class-tag">font-normal</span>
+                    <span class="class-tag">font-medium</span>
+                    <span class="class-tag">font-semibold</span>
+                    <span class="class-tag">font-bold</span>
+                    <span class="class-tag">font-black</span>
+                    <span class="class-tag">italic</span>
+                    <span class="class-tag">not-italic</span>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Text Alignment:</h3>
+                <span class="class-tag">text-left</span>
+                <span class="class-tag">text-center</span>
+                <span class="class-tag">text-right</span>
+                <span class="class-tag">text-justify</span>
+                <span class="class-tag">uppercase</span>
+                <span class="class-tag">lowercase</span>
+                <span class="class-tag">capitalize</span>
+            </div>
+        </div>
+
+        <!-- Borders & Radius -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🔲 Borders & Border Radius</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Borders:</h3>
+                    <span class="class-tag">border</span>
+                    <span class="class-tag">border-0</span>
+                    <span class="class-tag">border-2</span>
+                    <span class="class-tag">border-4</span>
+                    <span class="class-tag">border-t</span>
+                    <span class="class-tag">border-r</span>
+                    <span class="class-tag">border-b</span>
+                    <span class="class-tag">border-l</span>
+                    <span class="class-tag">border-gray-300</span>
+                    <span class="class-tag">border-blue-500</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Border Radius:</h3>
+                    <span class="class-tag">rounded</span>
+                    <span class="class-tag">rounded-none</span>
+                    <span class="class-tag">rounded-sm</span>
+                    <span class="class-tag">rounded-md</span>
+                    <span class="class-tag">rounded-lg</span>
+                    <span class="class-tag">rounded-xl</span>
+                    <span class="class-tag">rounded-full</span>
+                    <span class="class-tag">rounded-t</span>
+                    <span class="class-tag">rounded-r</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shadows & Effects -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">✨ Shadows & Effects</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Box Shadow:</h3>
+                <span class="class-tag">shadow-none</span>
+                <span class="class-tag">shadow-sm</span>
+                <span class="class-tag">shadow</span>
+                <span class="class-tag">shadow-md</span>
+                <span class="class-tag">shadow-lg</span>
+                <span class="class-tag">shadow-xl</span>
+                <span class="class-tag">shadow-2xl</span>
+                <span class="class-tag">shadow-inner</span>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Opacity & Transform:</h3>
+                <span class="class-tag">opacity-0</span>
+                <span class="class-tag">opacity-50</span>
+                <span class="class-tag">opacity-100</span>
+                <span class="class-tag">scale-50</span>
+                <span class="class-tag">scale-100</span>
+                <span class="class-tag">scale-125</span>
+                <span class="class-tag">rotate-45</span>
+                <span class="class-tag">rotate-90</span>
+            </div>
+        </div>
+
+        <!-- Position & Display -->
+        <div class="section-card layout-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">📍 Position & Display</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Display:</h3>
+                    <span class="class-tag">block</span>
+                    <span class="class-tag">inline-block</span>
+                    <span class="class-tag">inline</span>
+                    <span class="class-tag">hidden</span>
+                    <span class="class-tag">flex</span>
+                    <span class="class-tag">grid</span>
+                    <span class="class-tag">table</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Position:</h3>
+                    <span class="class-tag">static</span>
+                    <span class="class-tag">relative</span>
+                    <span class="class-tag">absolute</span>
+                    <span class="class-tag">fixed</span>
+                    <span class="class-tag">sticky</span>
+                    <span class="class-tag">top-0</span>
+                    <span class="class-tag">right-0</span>
+                    <span class="class-tag">bottom-0</span>
+                    <span class="class-tag">left-0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive States -->
+        <div class="section-card component-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🖱️ Interactive States</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Hover, Focus, Active:</h3>
+                <span class="class-tag">hover:bg-blue-600</span>
+                <span class="class-tag">hover:text-white</span>
+                <span class="class-tag">focus:outline-none</span>
+                <span class="class-tag">focus:ring-2</span>
+                <span class="class-tag">focus:ring-blue-500</span>
+                <span class="class-tag">active:bg-blue-700</span>
+                <span class="class-tag">transition</span>
+                <span class="class-tag">duration-300</span>
+                <span class="class-tag">ease-in-out</span>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg">
+                <p class="text-sm"><strong>Example Button:</strong></p>
+                <code class="block bg-gray-800 text-green-400 p-2 rounded mt-2 text-xs">
+                    bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300
+                </code>
+            </div>
+        </div>
+
+        <!-- Form Components -->
+        <div class="section-card component-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">📝 Form Elements</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Input Styling:</h3>
+                <span class="class-tag">border</span>
+                <span class="class-tag">border-gray-300</span>
+                <span class="class-tag">rounded-md</span>
+                <span class="class-tag">px-3</span>
+                <span class="class-tag">py-2</span>
+                <span class="class-tag">focus:outline-none</span>
+                <span class="class-tag">focus:ring-2</span>
+                <span class="class-tag">focus:ring-blue-500</span>
+                <span class="class-tag">placeholder-gray-500</span>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg">
+                <p class="text-sm mb-2"><strong>Form Example:</strong></p>
+                <pre class="bg-gray-800 text-green-400 p-3 rounded text-xs overflow-x-auto">
+&lt;input type="text" 
+       class="w-full border border-gray-300 rounded-md px-3 py-2 
+              focus:outline-none focus:ring-2 focus:ring-blue-500" 
+       placeholder="Enter your name"&gt;
+
+&lt;button class="bg-blue-500 hover:bg-blue-600 text-white 
+               px-4 py-2 rounded transition duration-300"&gt;
+    Submit
+&lt;/button&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Navbar Example -->
+        <div class="section-card component-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🧭 Navbar Example</h2>
+            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                <p class="text-sm mb-2"><strong>Responsive Navbar with Tailwind:</strong></p>
+                <pre class="bg-gray-800 text-green-400 p-3 rounded text-xs overflow-x-auto">
+&lt;nav class="bg-blue-600 text-white"&gt;
+  &lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;
+    &lt;div class="flex justify-between items-center h-16"&gt;
+      
+      &lt;!-- Logo --&gt;
+      &lt;div class="flex-shrink-0"&gt;
+        &lt;h1 class="text-xl font-bold"&gt;MyBrand&lt;/h1&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- Desktop Menu --&gt;
+      &lt;div class="hidden md:block"&gt;
+        &lt;div class="ml-10 flex items-baseline space-x-4"&gt;
+          &lt;a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md"&gt;Home&lt;/a&gt;
+          &lt;a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md"&gt;About&lt;/a&gt;
+          &lt;a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md"&gt;Services&lt;/a&gt;
+          &lt;a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md"&gt;Contact&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- Mobile menu button --&gt;
+      &lt;div class="md:hidden"&gt;
+        &lt;button class="text-white hover:bg-blue-700 p-2 rounded-md"&gt;
+          &lt;svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+            &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M4 6h16M4 12h16M4 18h16" /&gt;
+          &lt;/svg&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+            <p class="text-sm text-gray-600">💡 <strong>Tamil Note:</strong> Mobile-first design! md:hidden, md:block use பண்ணி responsive ஆக menu toggle பண்ணலாம்.</p>
+        </div>
+
+        <!-- Card Component -->
+        <div class="section-card component-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🃏 Card Component Example</h2>
+            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                <p class="text-sm mb-2"><strong>Product Card with Tailwind:</strong></p>
+                <pre class="bg-gray-800 text-green-400 p-3 rounded text-xs overflow-x-auto">
+&lt;div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"&gt;
+  
+  &lt;!-- Image --&gt;
+  &lt;img class="w-full h-48 object-cover" 
+       src="product.jpg" 
+       alt="Product Image"&gt;
+  
+  &lt;!-- Content --&gt;
+  &lt;div class="p-6"&gt;
+    &lt;h3 class="text-xl font-semibold text-gray-800 mb-2"&gt;
+      Amazing Product
+    &lt;/h3&gt;
+    &lt;p class="text-gray-600 text-sm mb-4"&gt;
+      This is a great product description that explains the features.
+    &lt;/p&gt;
+    
+    &lt;!-- Price & Button --&gt;
+    &lt;div class="flex items-center justify-between"&gt;
+      &lt;span class="text-2xl font-bold text-green-600"&gt;₹999&lt;/span&gt;
+      &lt;button class="bg-blue-500 hover:bg-blue-600 text-white 
+                     px-4 py-2 rounded-lg transition duration-300"&gt;
+        Add to Cart
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Animation & Transitions -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🎬 Animations & Transitions</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Transition Properties:</h3>
+                <span class="class-tag">transition</span>
+                <span class="class-tag">transition-all</span>
+                <span class="class-tag">transition-colors</span>
+                <span class="class-tag">transition-opacity</span>
+                <span class="class-tag">transition-transform</span>
+                <span class="class-tag">duration-75</span>
+                <span class="class-tag">duration-150</span>
+                <span class="class-tag">duration-300</span>
+                <span class="class-tag">duration-500</span>
+                <span class="class-tag">ease-in</span>
+                <span class="class-tag">ease-out</span>
+                <span class="class-tag">ease-in-out</span>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-gray-700 mb-2">Transform:</h3>
+                <span class="class-tag">transform</span>
+                <span class="class-tag">scale-95</span>
+                <span class="class-tag">scale-105</span>
+                <span class="class-tag">rotate-3</span>
+                <span class="class-tag">rotate-6</span>
+                <span class="class-tag">translate-x-1</span>
+                <span class="class-tag">translate-y-1</span>
+                <span class="class-tag">hover:scale-105</span>
+                <span class="class-tag">hover:rotate-3</span>
+            </div>
+        </div>
+
+        <!-- Utilities -->
+        <div class="section-card utility-group p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">🔧 Useful Utilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Cursor & Overflow:</h3>
+                    <span class="class-tag">cursor-pointer</span>
+                    <span class="class-tag">cursor-not-allowed</span>
+                    <span class="class-tag">overflow-hidden</span>
+                    <span class="class-tag">overflow-auto</span>
+                    <span class="class-tag">overflow-x-auto</span>
+                    <span class="class-tag">overflow-y-auto</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700 mb-2">Z-Index & Visibility:</h3>
+                    <span class="class-tag">z-0</span>
+                    <span class="class-tag">z-10</span>
+                    <span class="class-tag">z-20</span>
+                    <span class="class-tag">z-50</span>
+                    <span class="class-tag">visible</span>
+                    <span class="class-tag">invisible</span>
+                    <span class="class-tag">sr-only</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Examples Section -->
+        <div class="section-card bg-gradient-to-r from-purple-100 to-pink-100 border-l-purple-500 p-6 mb-6 rounded-lg">
+            <h2 class="section-title text-xl font-bold mb-4">⚡ Quick Examples</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                
+                <!-- Button Examples -->
+                <div class="bg-white p-4 rounded-lg">
+                    <h3 class="font-semibold mb-3">Button Variations:</h3>
+                    <div class="space-y-2">
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300">Primary Button</button>
+                        <button class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-4 py-2 rounded transition duration-300">Secondary Button</button>
+                        <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition duration-300">Danger Button</button>
+                        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition duration-300">Success Button</button>
+                    </div>
+                </div>
+
+                <!-- Card Example -->
+                <div class="bg-white p-4 rounded-lg">
+                    <h3 class="font-semibold mb-3">Mini Card:</h3>
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h4 class="font-semibold text-gray-800 mb-2">Sample Card</h4>
+                        <p class="text-gray-600 text-sm mb-3">This is a sample card built with Tailwind CSS utilities.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">₹1,299</span>
+                            <button class="bg-blue-500 text-white text-xs px-3 py-1 rounded">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-lg">
+            <p class="mb-2">&copy; 2025 Tailwind CSS Quick Reference</p>
+            <p class="text-sm text-gray-400">தமிழ் + English documentation | Utility-first CSS framework</p>
+            <p class="text-xs text-gray-500 mt-2">Created with ❤️ for developers | All essential classes covered</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
