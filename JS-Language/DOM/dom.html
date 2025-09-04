@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1 id="heading">Dom</h1>
+    <p>Dom Stands For Document object Modle its reperesent the stucture of html document.
+        it see the html page as a object modle - like a tree. in you browser your html file is reperesent an memory.
+    </p>
+    <p>DOM is Access your html page, and manuplate and change.</p>
+
+    <button class="btn btn-info" id="add">Click me</button>
+    
+
+    <script>
+
+//   Root Object = document
+
+// HTML Select panni use pannanum
+
+//   console.log(document);
+  //DOM Selectors
+//   getElementById()
+//   getElementByClassName()
+//   getElementByTagName()
+//   querySelector()
+//   querySelectorAll()
+  
+
+
+
+// DOM Listeners
+
+// inline html
+
+// onclick
+
+//js addeventlistener
+
+// document.getElementById("btn").addEventListener("click", ()=>{
+
+// })
+
+// console.dir(document)
+
+
+// DOM EVENTS
+
+// click - user click the elements
+// mouseover - mouse moves over elements
+// keyup key released
+//change - input value change
+//submit - form submit
+
+
+// DOM Properties
+
+// .innerHTML  Set&Get//Tags&text
+// .innerText  //Set&Get - textonly(No tags)
+// .textContent
+// .style //csschange
+//.value //form validate & data to get and set
+// .src - change images
+
+
+
+
+
+
+
+        
+    </script>
+
+
+
+<script>
+let head = document.getElementById("heading");
+console.log(head);
+
+let btn = document.getElementById("add");
+
+console.log('this is buttn', btn);
+
+btn.addEventListener("click",()=>{
+
+head.innerText = "Finish";
+head.style.backgroundColor = "red";
+
+btn.innerText = "Click Me more"
+
+});
+
+console.log(head);
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
