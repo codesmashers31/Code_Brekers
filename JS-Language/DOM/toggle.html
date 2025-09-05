@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Process</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body id="colortheme" style="background-color: black;color: white;">
+    
+    <nav class="navbar" id="navbar_link">
+        <div>
+            logo
+        </div>
+        <div  style="display: flex; gap:20px">
+              <a href="" style="color:white;text-decoration: none;">Home</a>
+              <a href="" style="color:white;text-decoration: none">About</a>
+              <a href="" style="color:white;text-decoration: none">Content</a>
+
+        </div>
+
+
+    </nav>
+   
+        <div>
+            TTis i stheme color 
+        </div>
+    <div >
+       <button id="btn" style="margin: 20px; background-color: rgb(255, 254, 254);color: rgb(0, 0, 0);padding: 10px;">theme Chanage</button>
+    </div>
+    
+
+
+    <script>
+          const changetheme = document.getElementById("colortheme");
+          const bnt = document.getElementById("btn");
+            
+
+         bnt.addEventListener("click",()=>{
+    
+           if(changetheme.style.backgroundColor === "black"){
+
+               changetheme.style.backgroundColor = "white";
+               changetheme.style.color = "black"
+               
+           }else{
+              changetheme.style.backgroundColor = "black";
+              changetheme.style.color = "white"
+           }
+         
+
+            
+         })
+
+            
+    </script>
+</body>
+</html>

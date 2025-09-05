@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Content</title>
+</head>
+<body style=" margin: auto;">
+    
+<div id="box" style=" margin: auto;background-color:red;width:100px;height: 100px; padding: 20px;">
+this is box
+</div>
+
+
+
+<!-- <button id="btn" style="margin: 20px; background-color: rgb(255, 254, 254);color: rgb(0, 0, 0);padding: 10px;">Hide Box</button> -->
+
+
+
+
+
+
+<script>
+    const boxcontent = document.getElementById("box");
+    const btnnew = document.getElementById("btn");
+
+
+   btnnew.addEventListener("click",()=>{
+    if(boxcontent.style.display !== "none"){
+        boxcontent.style.display = "none"
+        btnnew.textContent = "Show Box"
+
+    }
+
+    else{
+        boxcontent.style.display = "block";
+         btnnew.textContent = "Hide Content"
+         boxcontent.innerHTML = "Yes I am Showing"
+         boxcontent.style = "background-color:yellow;color:red"
+    }
+   })
+
+
+</script>
+
+</body>
+</html>
