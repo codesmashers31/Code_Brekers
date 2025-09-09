@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form handling</title>
+</head>
+<body>
+    <form action="" id="userform">
+        <input type="text" name="username" value="" placeholder="Enter the name" >
+        <br><br><br>
+        <input type="text" name="mobile" value="" placeholder="Enter the Mobile" >
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const formdata = document.getElementById("userform");
+
+        formdata.addEventListener("submit", (r) => {
+            r.preventDefault();
+
+            const name = r.target.username.value;
+            //alert(name)
+            const mobile = r.target.mobile.value;
+            //alert(mobile)
+            // Input validation
+            if (name === "") {
+                alert('Please Fill the User name');
+                return; // Prevent further execution if name is empty
+            }
+            if (mobile === "") {
+                alert('Please Fill the Mobile Number');
+                return; // Prevent further execution if mobile is empty
+            }
+
+            // Create user object
+            const users = { name, mobile };
+
+            // Retrieve existing data or initialize as an empty array
+            //let datas = JSON.parse(localStorage.getItem("userdata")) || [];
+
+            // Add the new user to the data
+            //datas.push(users);
+
+            // Store the updated data in localStorage
+            const userdatas = JSON.stringify(users);
+            localStorage.setItem("userdata", userdatas);
+
+            // Show success message
+            alert("Successfully registered");
+
+            // Reset form after submission
+            formdata.reset();
+        });
+    </script>
+</body>
+</html>

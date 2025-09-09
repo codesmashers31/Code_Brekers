@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    
+  <form id="loginform">
+   
+        <input type="email" placeholder="enter the Email"  id="regemail">
+        <input type="password" placeholder="enter the Password"  id="regpassword">
+        <p id="error"></p>
+        <button type="submit">Login</button>
+    </form>
+
+
+
+
+    <script>
+        const login = document.getElementById("loginform");
+
+        login.addEventListener("submit",(e)=>{
+
+            e.preventDefault();
+            const email = document.getElementById("regemail").value;
+            const password = document.getElementById("regpassword").value;
+
+           
+            let userdata = localStorage.getItem("users")
+
+            let newdatas = JSON.parse(userdata);
+
+
+          
+            console.log(newdatas);
+
+            if(email === newdatas.email && password === newdatas.password){
+                window.location.href = "home.html"
+            }else{
+                alert("Please enter the valid email and passwod")
+            }
+
+
+            
+
+
+        })
+    </script>
+
+</body>
+</html>

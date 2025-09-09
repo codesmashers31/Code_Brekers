@@ -8,7 +8,7 @@
 <body>
     
 
-<button id="btn">Hide Me</button>
+<!-- <button id="btn">Hide Me</button>
 
 
 
@@ -20,8 +20,44 @@
         btnhide.style.display = "none"
 
     })
+</script> -->
+
+
+
+
+
+<form id="formdata" action="" method="" enctype="multipart/form-data">
+
+<input type="text" id="form" value="">
+<button id="btn">Cilck</button>
+</form>
+
+
+
+<!-- addDataFull
+AddDataFull 
+add_data_full
+
+_daid
+
+add-full-adad -->
+
+<script>
+ 
+ //console.log(document);
+ 
+  const fromdatas =  document.getElementById("form").value;
+  const btn_1 = document.getElementById("btn")
+  btn_1.addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log(e);
+    
+         alert(fromdatas)
+  })
+   
+  console.log(fromdatas);
+  
+
 </script>
-
-
 </body>
 </html>

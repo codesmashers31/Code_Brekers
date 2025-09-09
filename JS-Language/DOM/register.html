@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+    <form id="regiterForm">
+        <input type="text" placeholder="enter the name"  id="regName">
+        <input type="email" placeholder="enter the Email"  id="regemail">
+        <input type="password" placeholder="enter the Password"  id="regpassword">
+        <p id="error"></p>
+        <button type="submit">Register</button>
+    </form>
+
+
+<script>
+const fromdata = document.getElementById("regiterForm");
+
+fromdata.addEventListener("submit",(e)=>{
+e.preventDefault()
+
+const name = document.getElementById("regName").value;
+const email = document.getElementById("regemail").value;
+const password = document.getElementById("regpassword").value;
+
+const conenterror = document.getElementById("error");
+
+
+conenterror.textContent = ""
+
+//alert(email)
+if(name ==="" || email==="" || password === ""){
+  
+   conenterror.textContent = "Please Enter the Values";
+   conenterror.style.color = "red";
+   return;
+
+}
+
+
+if(!email){
+     conenterror.textContent = "Please Enter Valid email";
+   conenterror.style.color = "red";
+   return;
+
+}
+
+
+const newdatas = JSON.parse(localStorage.getItem("users")) || [];
+//console.log(newdatas);
+const newusers = {name,email,password}
+
+//newdatas.push(newusers);
+
+
+
+
+localStorage.setItem("users",JSON.stringify(newusers))
+
+alert("Succfully Register")
+
+window.location.href = "login.html"
+
+
+})
+
+</script>
+    
+</body>
+</html>
